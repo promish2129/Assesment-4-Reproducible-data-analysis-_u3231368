@@ -1,0 +1,733 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Data Analysis:National Basketball Association},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Data Analysis:National Basketball Association}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Recommendation of Chicago Bulls 5 best players}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{background-information}{%
+\subsection{Background information}\label{background-information}}
+
+Basketball is a team sport in which two teams, usually each with five
+players, compete against one another on a rectangular court with the
+main goal of preventing the opposing team from shooting through their
+own hoop while putting the ball through the defender's hoop, which is a
+basket with a diameter of 18 inches (46 cm) mounted 10 feet (3.048 m)
+high to a backboard at each end of the court. Except when made from
+behind the three-point line, a field goal is worth three points(Roe,
+2009). Timed play is stopped following a foul, and the player who
+committed the foul or who was chosen to attempt a technical foul is
+awarded one, two, or three one-point free throws.The team with the most
+points at the conclusion of regulation play wins, but if the score is
+tied when regulation play ends, extra time (overtime) must be
+played(Roe, 2009).
+
+Players move the ball forward by either passing it to a teammate or
+bouncing it while running or walking (dribbling), both of which require
+a high level of ability. Players can employ a variety of shots on
+offense, such as layups, jump shots, and dunks. On defense, they can
+steal the ball from a player who is dribbling, intercept passes, or
+block shots(Roe, 2009). Finally, either the offense or the defense can
+grab rebounds, which are missed shots that rebound off the rim or
+backboard. It is against the rules to carry the ball, elevate or drag
+one's pivot foot when not dribbling, or hold the ball in both hands
+before starting to dribble again(Roe, 2009).
+
+There are five playing positions for each side's five players. The
+center is typically the tallest player, the power forward is second
+tallest and strongest, the small forward is slightly shorter but more
+agile, and the shooting guard and point guard are the shortest players
+or best ball handlers. The point guard executes the coach's game plan by
+managing the execution of offensive and defensive plays (player
+positioning). Players can play one-on-one, two-on-two, and
+three-on-three informally(Radu \& Nini, 2018).
+
+Basketball was created in 1891 by Canadian-American gym instructor James
+Naismith in Springfield, Massachusetts, and has since grown to be one of
+the most well-liked and watched sports in the entire globe. The National
+Basketball Association (NBA), which recruits the majority of its talent
+from American college basketball, is the most significant professional
+basketball league in terms of fandom, earnings, talent, and level of
+competition(Radu \& Nini, 2018).
+
+The top teams from national leagues outside of North America are
+eligible to compete in continental competitions like the EuroLeague and
+the Basketball Champions League Americas. The sport's two biggest
+international competitions, the Men's Olympic Basketball Tournament and
+the FIBA Basketball World Cup, draw the best national teams from all
+over the world. Regional competitions for national teams, such as
+EuroBasket and the FIBA AmeriCup, are held on each continent(Radu \&
+Nini, 2018).
+
+Top national teams from continental championships compete in the Women's
+Olympic Basketball Tournament and FIBA Women's Basketball World Cup. The
+WNBA, along with the popular NCAA Women's Division I Basketball
+Championship, is the primary North American league, while the most
+powerful European clubs play in the EuroLeague Women(Taylor, 2012).
+
+\hypertarget{description-of-the-scenario}{%
+\subsection{Description of the
+scenario}\label{description-of-the-scenario}}
+
+Chicago Bulls is one of the thirty teams which compete in National
+Basketball Association.In the most recent NBA season (2018-19 as per
+study), the team was placed 27th out of 30 (based on win-loss
+record).The team's budget for player contracts next season(2019-20 as
+per study) is \$118 million, ranked 26th out of 30.If the team is in
+position 26 in terms of budget,we expect the team's performance be 26 or
+any position between 1 and 26 but not 27.
+
+\hypertarget{the-aim-of-the-project}{%
+\subsection{The aim of the project}\label{the-aim-of-the-project}}
+
+This study is aimed at finding the best five starting players for
+Chicago Bulls basket ball team across all the 30 teams putting into
+consideration various constraints such as team financial
+constraint(budget).The point guard (PG), shooting guard (SG), small
+forward (SF), power forward (PF), and center (C) are the five positions
+in basketball which are required to be filled at start. On the floor,
+each position has a unique set of responsibilities, and the best
+basketball teams have incredible harmony between each position.
+
+In order to choose these 5 players,it is crucial to understand whether
+the player's performance depends on the salary the team pays the
+player,the player's age and even the position the player plays. With
+this established,it would be quite easy to select and recommend the
+players.
+
+\hypertarget{justification-and-importance}{%
+\subsection{Justification and
+importance}\label{justification-and-importance}}
+
+In the most recent NBA season (2018-19), Chicago Bulls basket ball team
+was placed 27th out of 30 (based on win-loss record).The failure or
+success of a team depends on its players alongside with others such as
+coach and key advisers. With an attempt to improve its performance,it
+was necessary to evaluate its players and search out across the thirty
+teams,the best five starting players.Poor performance of the team
+justices the importance of the study to statistically analyse and
+recommend the best five starting players putting into considerations the
+team financial constraint.
+
+\hypertarget{reading-and-cleaning-the-raw-data}{%
+\section{Reading and cleaning the raw
+data}\label{reading-and-cleaning-the-raw-data}}
+
+The study uses \textbf{NBA player statistics},\textbf{NBA player
+salaries} data set in order to achieve its aforementioned objective.
+These data sets were read into the R studio software by use of
+\textbf{read.csv()} function since the files were already stored in CSV
+format.A text file with a specific format known as a CSV
+(comma-separated values) file allows data to be saved in a
+table-structured format.
+
+The data sets were then joined together into 1 data set using
+\textbf{merge()} function which is in multi-functional
+\textbf{tidyverse} R package.
+
+Using \textbf{select()} function,the study selected the only 6 variables
+or column which were of interest. These columns include; *
+player\_name-This columns shows the names of various players within the
+thirty national teams. * Pos-This column shows the position in the field
+which a given selected player plays * Age-This column shows the age of
+the player in terms of years * Tm-This column shows the team in which
+the given player plays * PTS-This column shows the performance of the
+player in terms of point given * Salary-This column shows the salary
+earned by a given player
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-1}Portion of the data}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+Aaron Gordon & PF & 23 & ORL & 1246 & 21590909\\
+\hline
+Aaron Holiday & PG & 22 & IND & 294 & 1914480\\
+\hline
+Abdel Nader & SF & 25 & OKC & 241 & 1378242\\
+\hline
+Al-Farouq Aminu & PF & 28 & POR & 760 & 6957105\\
+\hline
+Al Horford & C & 32 & BOS & 925 & 28928710\\
+\hline
+Al Jefferson & NA & NA & NA & NA & 4000000\\
+\hline
+Alan Williams & PF & 26 & BRK & 18 & 77250\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{exploratory-analysis}{%
+\section{Exploratory analysis}\label{exploratory-analysis}}
+
+\hypertarget{checking-for-errors-and-missing-values-within-the-datasets}{%
+\subsection{Checking for errors and missing values within the
+datasets}\label{checking-for-errors-and-missing-values-within-the-datasets}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-2}Missing}
+\centering
+\begin{tabular}[t]{l|r}
+\hline
+  & NA\\
+\hline
+player\_name & 0\\
+\hline
+Pos & 64\\
+\hline
+Age & 64\\
+\hline
+Tm & 64\\
+\hline
+PTS & 64\\
+\hline
+salary & 22\\
+\hline
+\end{tabular}
+\end{table}
+
+There are a total of 278 missing values in the data set to be used.
+There is no any missing value in the player name,64 missing values in
+the pos column,64 missing values in Age,64 missing values in Tm,64
+missing values in PTS and 22 missing values in the salary column.This
+means that 36\% of our data has missing values. We therefore can not
+delete these values but instead deal with them through mean imputation.
+The columns were already in correct data type and therefore no data
+types errors detected.
+
+\hypertarget{checking-the-distribution-of-variables}{%
+\subsection{Checking the distribution of
+variables}\label{checking-the-distribution-of-variables}}
+
+\hypertarget{distribution-of-players-age}{%
+\subsubsection{Distribution of players'
+age}\label{distribution-of-players-age}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-4-1}
+
+players' age seems to be almost normally distributed but slightly skewed
+to the right. Only two variables are considered as extreme values of
+age.
+
+\hypertarget{distribution-of-players-points}{%
+\subsubsection{Distribution of players'
+points}\label{distribution-of-players-points}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-5-1}
+
+The players' points are not normally distributed. They are skewed to
+right.There seems to have several outliers(extreme values) just above
+the maximum value.
+
+\hypertarget{distribution-of-players-salary}{%
+\subsubsection{Distribution of players'
+salary}\label{distribution-of-players-salary}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-6-1}
+
+The players' salary is not normally distributed. They are skewed to
+right.There seems to have several outliers(extreme values) just above
+the maximum value.
+
+\hypertarget{checking-for-relationships-between-variables}{%
+\subsection{Checking for relationships between
+variables}\label{checking-for-relationships-between-variables}}
+
+\hypertarget{relationship-between-players-points-and-salary}{%
+\subsubsection{Relationship between players' points and
+salary}\label{relationship-between-players-points-and-salary}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-7-1}
+
+The scatter plot shows that there is a positive direct relationship
+between the players' performance in terms of points and salary. An
+increase in salary is associated with an increase in players' points and
+the opposite is true.
+
+\hypertarget{relationship-between-players-points-and-age}{%
+\subsubsection{Relationship between players' points and
+Age}\label{relationship-between-players-points-and-age}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-8-1}
+
+There seems to have an inverse and negative relationship between age and
+performance in terms of points. This means that an increase in age is
+associated with a decrease in performance.
+
+\hypertarget{relationship-between-age-and-positions}{%
+\subsubsection{Relationship between age and
+positions}\label{relationship-between-age-and-positions}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-9-1}
+
+SG-PF seems to be the field position with the aged players and C-PF
+seems to be the youngest.
+
+\hypertarget{relationship-between-salary-and-positions}{%
+\subsubsection{Relationship between salary and
+positions}\label{relationship-between-salary-and-positions}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-10-1}
+
+SF-SG seems to be the position paid the highest salary amount and C-PF
+with the least salary amount.
+
+\hypertarget{relationship-between-perfomancepoints-and-positions}{%
+\subsubsection{Relationship between perfomance(points) and
+positions}\label{relationship-between-perfomancepoints-and-positions}}
+
+\includegraphics[width=0.7\linewidth]{Basketball_files/figure-latex/unnamed-chunk-11-1}
+
+SF-SG seems to be the best performing position and PF-C is the least
+performing position.
+
+\hypertarget{justification-for-decisions-made-about-data-modelling}{%
+\subsection{Justification for decisions made about data
+modelling}\label{justification-for-decisions-made-about-data-modelling}}
+
+To understand whether the player's performance depends on the salary the
+team pays the player,the player's age and even the position the player
+plays,we need to conduct a multiple linear regression. This is because
+the modelling involves more than 1 independent variable and one
+dependent variable.
+
+By fitting a line to the observed data, regression models are used to
+describe relationships between variables. You can estimate a dependent
+variable's change as an independent variable or set of independent
+variables changes using regression.
+
+One dependent variable and two or more independent variables are
+estimated using multiple linear regression. If you want to know how
+strongly a link exists between two or more independent variables and one
+dependent variable, as well as how much the dependent variable changes
+when the independent variables change at a particular level, you can use
+multiple linear regression.
+
+\hypertarget{data-modelling-and-results}{%
+\section{Data modelling and results}\label{data-modelling-and-results}}
+
+\hypertarget{data-modelling}{%
+\subsection{Data modelling}\label{data-modelling}}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = PTS ~ salary + Age + Pos, data = player)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -868.90 -240.80  -78.42  190.21 1522.60 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  7.313e+02  1.032e+02   7.083 3.46e-12 ***
+## salary       3.664e-05  2.059e-06  17.800  < 2e-16 ***
+## Age         -2.175e+01  3.791e+00  -5.737 1.44e-08 ***
+## PosC-PF     -5.418e+01  3.803e+02  -0.142    0.887    
+## PosPF       -1.289e+01  4.701e+01  -0.274    0.784    
+## PosPF-C     -1.701e+02  3.803e+02  -0.447    0.655    
+## PosPF-SF    -2.676e+00  2.701e+02  -0.010    0.992    
+## PosPG        7.464e+01  4.745e+01   1.573    0.116    
+## PosSF       -9.827e+00  4.936e+01  -0.199    0.842    
+## PosSF-SG     2.413e+02  2.703e+02   0.893    0.372    
+## PosSG        6.348e+01  4.529e+01   1.402    0.161    
+## PosSG-PF     3.963e+02  3.816e+02   1.039    0.299    
+## PosSG-SF     4.553e+01  3.798e+02   0.120    0.905    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 378.1 on 695 degrees of freedom
+## Multiple R-squared:  0.3242, Adjusted R-squared:  0.3125 
+## F-statistic: 27.78 on 12 and 695 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\hypertarget{assumption-checking}{%
+\subsection{Assumption checking}\label{assumption-checking}}
+
+\includegraphics{Basketball_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\hypertarget{linear-relationship-assumption}{%
+\subsubsection{Linear relationship
+assumption}\label{linear-relationship-assumption}}
+
+We will use \textbf{\emph{Residuals vs Fitted}} plot to check this
+assumption. The residuals ``bounce'' about the 0 line at random. This
+shows that it is plausible to assume that the relationship is linear.
+Around the 0 line, the residuals generally form a ``horizontal band.''
+This suggests that the error terms' variances are equivalent. From the
+fundamentally random pattern of residuals, no one residual ``sticks
+out.'' There might not be any outliers, according to this.
+
+\hypertarget{normal-distribution-of-errors-assumption}{%
+\subsubsection{Normal distribution of errors
+assumption}\label{normal-distribution-of-errors-assumption}}
+
+We will use \textbf{\emph{Normal Q-Q}} plot to check this assumption.
+Given that the points are mostly within 45 degrees of the reference
+line, the data is normally distributed.
+
+\hypertarget{homoskedasticity}{%
+\paragraph{Homoskedasticity}\label{homoskedasticity}}
+
+We will use \textbf{\emph{Scale-Location}} to check homogeneity of
+variance of the residuals. We can confirm that the red line generally
+follows the plot's horizontal axis. Therefore, it is likely that our
+regression model will satisfy the homoscedasticity assumption. In other
+words, at all fitted values,the dispersion of the residuals is roughly
+equal. Additionally, we can confirm that there isn't any discernible
+pattern in the residuals. In other words, the residuals should have
+nearly similar variability at all fitted values and be randomly
+distributed around the red line, which is what happens in our situation.
+
+\hypertarget{model-output-and-interpretation}{%
+\subsection{Model output and
+interpretation}\label{model-output-and-interpretation}}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = PTS ~ salary + Age + Pos, data = player)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -868.90 -240.80  -78.42  190.21 1522.60 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  7.313e+02  1.032e+02   7.083 3.46e-12 ***
+## salary       3.664e-05  2.059e-06  17.800  < 2e-16 ***
+## Age         -2.175e+01  3.791e+00  -5.737 1.44e-08 ***
+## PosC-PF     -5.418e+01  3.803e+02  -0.142    0.887    
+## PosPF       -1.289e+01  4.701e+01  -0.274    0.784    
+## PosPF-C     -1.701e+02  3.803e+02  -0.447    0.655    
+## PosPF-SF    -2.676e+00  2.701e+02  -0.010    0.992    
+## PosPG        7.464e+01  4.745e+01   1.573    0.116    
+## PosSF       -9.827e+00  4.936e+01  -0.199    0.842    
+## PosSF-SG     2.413e+02  2.703e+02   0.893    0.372    
+## PosSG        6.348e+01  4.529e+01   1.402    0.161    
+## PosSG-PF     3.963e+02  3.816e+02   1.039    0.299    
+## PosSG-SF     4.553e+01  3.798e+02   0.120    0.905    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 378.1 on 695 degrees of freedom
+## Multiple R-squared:  0.3242, Adjusted R-squared:  0.3125 
+## F-statistic: 27.78 on 12 and 695 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\includegraphics{Basketball_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+According to the mode output we have F(12,695) = 27.78, p = 0.00. With
+small p-value,this model is statistically significant. From the
+model,only salary and age of a player significantly predicts the players
+performance in terms of points. This is because of their corresponding
+p-value which are less than 0.05 at 95\% confidence interval and 5\%
+level of acceptance.
+
+With a positive estimate for salary(3.664e-05),the average player's
+performance in terms of points increases by 3.664e-05 for every unit
+increase in salary holding all other factors constant.With a negative
+estimate for salary(-2.175e+01),the average player's performance in
+terms of points decreases by 2.175e+01 for every unit increase in age
+holding all other factors constant.
+
+\hypertarget{player-recommendations}{%
+\section{Player recommendations}\label{player-recommendations}}
+
+From the model output and interpretation,it is very clear that players
+who are well paid tend to perform better. In addition,it is very clear
+that young players are expected to perform better as compared to old
+players. Therefore,the player selection will be based on
+salary(restricting ourselves to budget below \$118 million).
+
+We will recommend one player per each position for the five major
+positions;point guard (PG), shooting guard (SG), small forward (SF),
+power forward (PF), and center (C). For each position,we will first
+select the top 5 players in terms of performance(measured in points).
+Out of the top 5 players,we will take the youngest best performing.
+
+\hypertarget{player-for-pf}{%
+\subsection{Player for PF}\label{player-for-pf}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-15}Top 5 PF players}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+Giannis Antetokounmpo & PF & 24 & MIL & 1994 & 24157304\\
+\hline
+Blake Griffin & PF & 29 & DET & 1841 & 31873932\\
+\hline
+Tobias Harris & PF & 26 & TOT & 1644 & 14800000\\
+\hline
+Julius Randle & PF & 24 & NOP & 1565 & 8641000\\
+\hline
+Pascal Siakam & PF & 24 & TOR & 1354 & 1544951\\
+\hline
+\end{tabular}
+\end{table}
+
+Giannis Antetokounmpo(from MIL team) is the youngest best PF player. The
+player is 24 years old and is paid a salary of \$24157304.
+
+\hypertarget{player-for-c}{%
+\subsection{Player for C}\label{player-for-c}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-16}Top 5 C players}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+Karl-Anthony Towns & C & 23 & MIN & 1880 & 7839435\\
+\hline
+Joel Embiid & C & 24 & PHI & 1761 & 25467250\\
+\hline
+LaMarcus Aldridge & C & 33 & SAS & 1727 & 22347015\\
+\hline
+Nikola Vucevic & C & 28 & ORL & 1665 & 12750000\\
+\hline
+Nikola Jokic & C & 23 & DEN & 1604 & 25467250\\
+\hline
+\end{tabular}
+\end{table}
+
+Karl-Anthony Towns(from MIN team) is the youngest best center player who
+is aged 23 years old.The player is paid a salary of \$7839435.
+
+\hypertarget{player-for-pg}{%
+\subsection{Player for PG}\label{player-for-pg}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-17}Top 5 PG players}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+James Harden & PG & 29 & HOU & 2818 & 30570000\\
+\hline
+Kemba Walker & PG & 28 & CHO & 2102 & 12000000\\
+\hline
+Damian Lillard & PG & 28 & POR & 2067 & 27977689\\
+\hline
+Stephen Curry & PG & 30 & GSW & 1881 & 37457154\\
+\hline
+D'Angelo Russell & PG & 22 & BRK & 1712 & 7019698\\
+\hline
+\end{tabular}
+\end{table}
+
+D'Angelo Russell(from BRK team) is the youngest best PG player. The
+player is 22 years old and is paid a salary of \$7019698.
+
+\hypertarget{player-for-sf}{%
+\subsection{Player for SF}\label{player-for-sf}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-18}Top 5 SF players}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+Paul George & SF & 28 & OKC & 2159 & 30560700\\
+\hline
+Kevin Durant & SF & 30 & GSW & 2027 & 30000000\\
+\hline
+Kawhi Leonard & SF & 27 & TOR & 1596 & 23114066\\
+\hline
+LeBron James & SF & 34 & LAL & 1505 & 35654150\\
+\hline
+Bojan Bogdanovic & SF & 29 & IND & 1454 & 10500000\\
+\hline
+\end{tabular}
+\end{table}
+
+Kawhi Leonard(from TOR team) is the youngest best PF player. The player
+is 27 years old and is paid a salary of \$23114066.
+
+\hypertarget{player-for-sg}{%
+\subsection{Player for SG}\label{player-for-sg}}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-19}Top 5 SG players}
+\centering
+\begin{tabular}[t]{l|l|r|l|r|r}
+\hline
+player\_name & Pos & Age & Tm & PTS & salary\\
+\hline
+Bradley Beal & SG & 25 & WAS & 2099 & 25434262\\
+\hline
+Donovan Mitchell & SG & 22 & UTA & 1829 & 3111480\\
+\hline
+Devin Booker & SG & 22 & PHO & 1700 & 3314365\\
+\hline
+Buddy Hield & SG & 26 & SAC & 1695 & 3833760\\
+\hline
+Klay Thompson & SG & 28 & GSW & 1680 & 18988725\\
+\hline
+\end{tabular}
+\end{table}
+
+Donovan Mitchell(from UTA team) is the youngest best PF player. The
+player is 22 years old and is paid a salary of \$3111480.
+
+The total budget for the 5 players is \$ 65241983. This is just 55.29\%
+of the total proposed budget of \%118 million.
+
+\hypertarget{summary}{%
+\section{Summary}\label{summary}}
+
+The study investigated the key factors which should be considered when
+selecting the best 5 players apart from their points
+earned(performance). Using performance alone,can bring the best 5
+players but the total budget can surpluses the allocated budget of \$118
+million. The study found that age and salary paid to a player
+significantly affect the player's performance.
+
+5 players were selected best on the 5 major positions in basket ball.
+For each position,we selected the top 5 players in terms of
+performance(measured in points). Out of the top 5 players,we took the
+youngest best performing player. Therefore the 5 reccommnded players
+are;
+
+\begin{itemize}
+\tightlist
+\item
+  PF-Giannis Antetokounmpo(from MIL team) is the youngest best PF
+  player. The player is 24 years old and is paid a salary of \$24157304.
+\item
+  Center-Karl-Anthony Towns(from MIN team) is the youngest best center
+  player who is aged 23 years old.The player is paid a salary of
+  \$7839435.
+\item
+  PG-D'Angelo Russell(from BRK team) is the youngest best PG player. The
+  player is 22 years old and is paid a salary of \$7019698.
+\item
+  SF-Kawhi Leonard(from TOR team) is the youngest best PF player. The
+  player is 27 years old and is paid a salary of \$23114066.
+\item
+  SG-Donovan Mitchell(from UTA team) is the youngest best PF player. The
+  player is 22 years old and is paid a salary of \$3111480.
+\end{itemize}
+
+\hypertarget{reference}{%
+\section{Reference}\label{reference}}
+
+Radu, A., \& Nini, F. (2018). Women's basketball. THE Science of
+Basketball, 127--142. \url{https://doi.org/10.4324/9781315204000-6}
+
+Roe, D. (2009). Basketball. African American Studies Center.
+\url{https://doi.org/10.1093/acref/9780195301731.013.45253}
+
+Taylor, L. (2012). Competing risks in basketball \ldots{} competing
+risks in basketball \ldots{} competing risks in basketball \ldots.
+CHANCE, 25(2), 31--36.
+\url{https://doi.org/10.1080/09332480.2012.685367}
+
+\end{document}

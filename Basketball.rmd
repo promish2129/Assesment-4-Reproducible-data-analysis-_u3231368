@@ -3,10 +3,6 @@ title: "Data Analysis:National Basketball Association"
 subtitle: "Recommendation of Chicago Bulls 5 best players"
 date: ''
 output:
-  pdf_document:
-    latex_engine: xelatex
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     number_sections: yes
@@ -15,6 +11,10 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: '3'
   word_document:
     toc: yes
     toc_depth: '3'
@@ -75,12 +75,12 @@ library(tidyverse)
 library(jtools)
 library(kableExtra)
 library(ggplot2)
-Player<-read.csv("2018-19_nba_player-statistics.csv")
-payroll<-read.csv("2019-20_nba_team-payroll.csv")
+Player<-read.csv("data/2018-19_nba_player-statistics.csv")
+payroll<-read.csv("data/2019-20_nba_team-payroll.csv")
 payroll[]<-lapply(payroll,gsub,pattern="$",fixed=TRUE,replacement="")
 payroll$salary<- as.numeric(gsub(",","",payroll$salary))
 
-playersalaries<-read.csv("2018-19_nba_player-salaries.csv")
+playersalaries<-read.csv("data/2018-19_nba_player-salaries.csv")
 
 player<-merge(Player,playersalaries,all = T)
 player<-player%>%select(player_name,Pos,Age,Tm,PTS,salary)
