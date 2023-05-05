@@ -1,3 +1,22 @@
+This is a Github Resository for Assessment-4 Reproducible data analysis. This Repo contains various folder that is being used during analysis. This Repo contains data  folder with all used data, Readme file with repos description, a knitr report of my analysis as html file, a raw r warkdown file of my analysis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Data Description: Reproducible Data Analysis Project
 
 Overview
