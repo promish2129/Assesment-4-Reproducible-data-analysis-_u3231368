@@ -6,5 +6,5 @@ This description of various parts in this repository are:
 4) Basketball.R - This is R file of the analysis that contains all r coding
 5) Basketball.rmd - This is R markdown file with all analysis and result. This file is used to generate Knitr report
 6) Basketball.html - This is Knitr report generated in html fle.
-7) images - This folder contains all the plots that were gnerated while doing data analysis
+7) Plots during analysis - This folder contains all the plots that were gnerated while doing data analysis
 
