@@ -1,4 +1,4 @@
-This is a Github Resository for Assessment-4 Reproducible data analysis. This Repo contains various folder that is being used during analysis. 
+This is a Github Resository for Assessment 4: Reproducible data analysis. This Repository contains various folder that is being used during analysis. 
 This description of various parts in this repository are:
 1) README.md - This is mark down file that contains information of this repository and its contents.
 2) Variable_definations.txt - This is text document which contains the description of all variables of data that is being used in this project.
